@@ -11,7 +11,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');
 
 });
-Route::get('/posterminal', function () {
-    return view('posterminal'); 
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('posterminal', 'posterminal')->name('posterminal');
+
 });
+
 require __DIR__.'/settings.php';

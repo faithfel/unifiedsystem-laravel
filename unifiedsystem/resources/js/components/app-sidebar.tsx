@@ -13,7 +13,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { dashboard,  } from '@/routes';
+import { dashboard, posterminal  } from '@/routes';
 import type { NavItem } from '@/types';
 
 const mainNavItems: NavItem[] = [
@@ -24,7 +24,7 @@ const mainNavItems: NavItem[] = [
     },
     {
         title: 'POS Terminal',
-        href: dashboard(),
+        href: posterminal(),
         icon: SquareChevronRight,
     },
     {

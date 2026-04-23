@@ -28,7 +28,15 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 });
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::inertia('employees', 'employees')->name('employees');
+    Route::inertia('department', 'department')->name('department');
+
+});
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('attendance', 'attendance')->name('attendance');
+
+});
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('leave', 'leave')->name('leave');
 
 });
 require __DIR__.'/settings.php';

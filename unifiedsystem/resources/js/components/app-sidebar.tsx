@@ -13,7 +13,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { dashboard, posterminal, transactions, stocks, employees  } from '@/routes';
+import { dashboard, posterminal, transactions, stocks, employees, department, attendance, leave  } from '@/routes';
 import type { NavItem } from '@/types';
 
 const mainNavItems: NavItem[] = [
@@ -44,18 +44,18 @@ const mainNavItems: NavItem[] = [
     },
         {
         title: 'Department',
-        href: dashboard(),  
+        href: department(),  
         icon: Ungroup,
     },
 
         {
         title: 'Attendance',
-        href: dashboard(),  
+        href: attendance(),  
         icon: FileClock,
     },
             {
         title: 'Leave Request',
-        href: dashboard(),  
+        href: leave(),  
         icon: DoorOpen,
     },
             {

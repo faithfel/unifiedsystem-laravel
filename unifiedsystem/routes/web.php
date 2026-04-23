@@ -39,4 +39,13 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('leave', 'leave')->name('leave');
 
 });
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('payroll', 'payroll')->name('payroll');
+
+});
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('categories', 'categories')->name('categories');
+
+});
 require __DIR__.'/settings.php';

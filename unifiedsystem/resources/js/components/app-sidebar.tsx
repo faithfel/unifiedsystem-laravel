@@ -13,7 +13,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { dashboard, posterminal, transactions, stocks, employees, department, attendance, leave  } from '@/routes';
+import { dashboard, posterminal, transactions, stocks, employees, department, attendance, leave, payroll, categories } from '@/routes';
 import type { NavItem } from '@/types';
 
 const mainNavItems: NavItem[] = [
@@ -60,12 +60,12 @@ const mainNavItems: NavItem[] = [
     },
             {
         title: 'Payroll',
-        href: dashboard(),  
+        href: payroll(),  
         icon: DollarSign,
     },
                 {
         title: 'Categories',
-        href: dashboard(),  
+        href: categories(),  
         icon: LayoutGrid,
     },
 ];

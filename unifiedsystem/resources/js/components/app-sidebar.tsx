@@ -1,5 +1,5 @@
 import { Link } from '@inertiajs/react';
-import { BookOpen, FolderGit2, LayoutGrid } from 'lucide-react';
+import { BookOpen, FolderGit2, LayoutGrid, SquareChevronRight, ArrowLeftRight, Package, House, ContactRound, Ungroup, FileClock, DoorOpen, DollarSign } from 'lucide-react';
 import AppLogo from '@/components/app-logo';
 import { NavFooter } from '@/components/nav-footer';
 import { NavMain } from '@/components/nav-main';
@@ -20,21 +20,59 @@ const mainNavItems: NavItem[] = [
     {
         title: 'Dashboard',
         href: dashboard(),
+        icon: House,
+    },
+    {
+        title: 'POS Terminal',
+        href: dashboard(),
+        icon: SquareChevronRight,
+    },
+    {
+        title: 'Transactions',
+        href: dashboard(),
+        icon: ArrowLeftRight,
+    },    
+    {
+        title: 'Stocks',
+        href: dashboard(),  
+        icon: Package,
+    },
+    {
+        title: 'Employees Lists',
+        href: dashboard(),  
+        icon: ContactRound,
+    },
+        {
+        title: 'Department',
+        href: dashboard(),  
+        icon: Ungroup,
+    },
+
+        {
+        title: 'Attendance',
+        href: dashboard(),  
+        icon: FileClock,
+    },
+            {
+        title: 'Leave Request',
+        href: dashboard(),  
+        icon: DoorOpen,
+    },
+            {
+        title: 'Payroll',
+        href: dashboard(),  
+        icon: DollarSign,
+    },
+                {
+        title: 'Categories',
+        href: dashboard(),  
         icon: LayoutGrid,
     },
 ];
 
 const footerNavItems: NavItem[] = [
-    {
-        title: 'Repository',
-        href: 'https://github.com/laravel/react-starter-kit',
-        icon: FolderGit2,
-    },
-    {
-        title: 'Documentation',
-        href: 'https://laravel.com/docs/starter-kits#react',
-        icon: BookOpen,
-    },
+
+
 ];
 
 export function AppSidebar() {

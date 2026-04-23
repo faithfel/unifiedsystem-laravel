@@ -13,7 +13,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { dashboard, posterminal  } from '@/routes';
+import { dashboard, posterminal, transactions, stocks, employees  } from '@/routes';
 import type { NavItem } from '@/types';
 
 const mainNavItems: NavItem[] = [
@@ -29,17 +29,17 @@ const mainNavItems: NavItem[] = [
     },
     {
         title: 'Transactions',
-        href: dashboard(),
+        href: transactions(),
         icon: ArrowLeftRight,
     },    
     {
         title: 'Stocks',
-        href: dashboard(),  
+        href: stocks(),  
         icon: Package,
     },
     {
         title: 'Employees Lists',
-        href: dashboard(),  
+        href: employees(),  
         icon: ContactRound,
     },
         {

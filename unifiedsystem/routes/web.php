@@ -15,5 +15,20 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('posterminal', 'posterminal')->name('posterminal');
 
 });
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('transactions', 'transactions')->name('transactions');
 
+});
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('stocks', 'stocks')->name('stocks');
+
+});
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('employees', 'employees')->name('employees');
+
+});
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('employees', 'employees')->name('employees');
+
+});
 require __DIR__.'/settings.php';

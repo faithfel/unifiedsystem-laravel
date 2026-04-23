@@ -1,9 +1,9 @@
 import { Head } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
-import { posterminal } from '@/routes';
+import { stocks } from '@/routes';
 
 
-export default function POSterminal() {
+export default function Stocks() {
     return (
         <>
             
@@ -12,11 +12,11 @@ export default function POSterminal() {
     );
 }
 
-posterminal.layout = {
+stocks.layout = {
     breadcrumbs: [
         {
-            title: 'POSTerminal',
-            href: posterminal(),
+            title: 'Stocks',
+            href: stocks(),
         },
     ],
 };

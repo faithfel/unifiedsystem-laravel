@@ -13,7 +13,7 @@ class PostStockController extends Controller
     public function index(Request $request)
     {
         $posts = PostStock::all();
-
+        return view('stocks.index');
     }
 
     /**

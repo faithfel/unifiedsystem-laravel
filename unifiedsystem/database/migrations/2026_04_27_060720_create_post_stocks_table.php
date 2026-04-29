@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('product');
             $table->string('sku');
             $table->string('category');
-            $table->decimal('',10,2)->default(0);
+            $table->decimal('price',10,2)->default(0);
             $table->enum('status', ['active', 'inactive']);
         });
     }

@@ -9,10 +9,12 @@ Route::inertia('/', 'welcome', [
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');
+    Route::get('/posterminal', [POSTerminalContoller::class, 'index'])->name('posterminal.index');
 
 });
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('posterminal', 'posterminal')->name('posterminal');
+    
 
 });
 Route::middleware(['auth', 'verified'])->group(function () {

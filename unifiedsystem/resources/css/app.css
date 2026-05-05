@@ -141,3 +141,10 @@
         @apply bg-background text-foreground;
     }
 }
+
+
+.tabtitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin: 10px;
+}

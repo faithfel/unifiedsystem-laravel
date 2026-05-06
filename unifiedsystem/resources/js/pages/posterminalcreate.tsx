@@ -4,24 +4,24 @@ import { posterminal, posterminalcreate } from '@/routes';
 import { Button } from '@/components/ui/button';
 
 
-export default function PosTerminal() {
+export default function PosTerminalCreate() {
     return (
         <>
             <Head title="POS Terminal" />
-            <h1 className='tabtitle'>POS TERMINAL</h1>
+            <h1 className='tabtitle'>POS TERMINAL create</h1>
             <div className="m-4">
-                <Link href={(posterminalcreate())}><Button>create</Button></Link>
+                <Link href={(posterminal())}><Button>return</Button></Link>
                 
             </div>
         </>
     );
 }
 
-posterminal.layout = {
+posterminalcreate.layout = {
     breadcrumbs: [
         {
-            title: 'POSTerminal',
-            href: posterminal(),
+            title: 'POSTerminalCreate',
+            href: posterminalcreate(),
         },
     ],
 };

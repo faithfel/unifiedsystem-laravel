@@ -9,16 +9,15 @@ Route::inertia('/', 'welcome', [
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');
-
-    Route::get('/posterminal/create', [POSTerminalController::class, 'create'])->name('posterminal.create');
-
 });
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('posterminal', 'posterminal')->name('posterminal');
-    Route::get('/posterminal/create', [POSTerminalController::class, 'create'])->name('posterminal.create');
-    
-
 });
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('posterminalcreate', 'posterminalcreate' )->name('posterminalcreate');
+});
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('transactions', 'transactions')->name('transactions');
 

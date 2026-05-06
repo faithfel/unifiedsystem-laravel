@@ -15,10 +15,21 @@ export default function StocksCreate() {
             <form>
                 <div className="">
 
-                <label htmlFor="stocksname">Stocks</label>
-                <input id="stocksname" type="text" name="stocksname" />
-                <label htmlFor="stocksname">Stocks</label>
-                <input id="stocksname" type="text" name="stocksname" />
+                    <label htmlFor="product">Product</label>
+                    <input id="product" type="text" name="product" />
+                    <label htmlFor="sku">SKU</label>
+                    <input id="sku" type="text" name="sku" />
+                    <label htmlFor="category">Category</label>
+                    <input id="category" type="text" name="category" />
+                    <label htmlFor="price">Price</label>
+                    <input id="price" type="text" name="price" />
+                    <label htmlFor="stock">Stock</label>
+                    <input id="stock" type="text" name="stock" />
+                    <label htmlFor="status">Status</label>
+                        <select id="status" name="status">
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                    </select>           
 
 
                 </div>

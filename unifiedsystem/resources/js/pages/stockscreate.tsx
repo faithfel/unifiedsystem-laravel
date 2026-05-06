@@ -4,6 +4,7 @@ import { stocks, stockscreate } from '@/routes';
 import { Button } from '@/components/ui/button';
 import { Label } from '@radix-ui/react-dropdown-menu';
 import { Input } from '@/components/ui/input';
+import { Form } from "@inertiajs/react";
 
 export default function StocksCreate() {
     return (
@@ -30,7 +31,7 @@ export default function StocksCreate() {
                             <option value="active">Active</option>
                             <option value="inactive">Inactive</option>
                     </select>           
-
+                    <button type='submit'>Save</button>
 
                 </div>
             </form>

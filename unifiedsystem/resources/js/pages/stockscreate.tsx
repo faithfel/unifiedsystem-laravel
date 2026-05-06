@@ -1,4 +1,4 @@
-import { Head, Link } from '@inertiajs/react';
+import { Head, Link, useForm } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { stocks, stockscreate } from '@/routes';
 import { Button } from '@/components/ui/button';
@@ -7,6 +7,14 @@ import { Input } from '@/components/ui/input';
 import { Form } from "@inertiajs/react";
 
 export default function StocksCreate() {
+
+    const{ data, setData, post, processing, errors} = useForm({
+        product: '',
+        sku: '',
+
+    });
+
+
     return (
         <>
             <h1 className='tabtitle'>Stock create</h1>

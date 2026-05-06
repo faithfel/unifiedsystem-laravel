@@ -10,7 +10,5 @@ class POSTerminalController extends Controller
         return Inertia::render();
     }
 
-    public function create() {
-        return Inertia::render('posterminal/create')
-    }
+
 }

@@ -9,4 +9,8 @@ class POSTerminalController extends Controller
     public function index() {
         return Inertia::render();
     }
+
+    public function create() {
+        return Inertia::render('posterminal/create')
+    }
 }

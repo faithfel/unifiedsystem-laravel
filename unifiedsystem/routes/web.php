@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\POSTerminalController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
@@ -9,11 +9,13 @@ Route::inertia('/', 'welcome', [
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');
-    Route::get('/posterminal', [POSTerminalContoller::class, 'index'])->name('posterminal.index');
+
+    Route::get('/posterminal/create', [POSTerminalController::class, 'create'])->name('posterminal.create');
 
 });
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('posterminal', 'posterminal')->name('posterminal');
+    Route::get('/posterminal/create', [POSTerminalController::class, 'create'])->name('posterminal.create');
     
 
 });

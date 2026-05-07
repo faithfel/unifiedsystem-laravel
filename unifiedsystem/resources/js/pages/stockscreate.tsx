@@ -11,6 +11,10 @@ export default function StocksCreate() {
     const{ data, setData, post, processing, errors} = useForm({
         product: '',
         sku: '',
+        category: '',
+        price:'',
+        stock:'',
+        status:'',
 
     });
 
@@ -25,17 +29,17 @@ export default function StocksCreate() {
                 <div className="">
 
                     <label htmlFor="product">Product</label>
-                    <input id="product" type="text" name="product" />
+                    <input id="product" type="text" name="product" value={data.product} onChange={{e} => setData('name', e.target.value)}/>
                     <label htmlFor="sku">SKU</label>
-                    <input id="sku" type="text" name="sku" />
+                    <input id="sku" type="text" name="sku" value={data.sku} />
                     <label htmlFor="category">Category</label>
-                    <input id="category" type="text" name="category" />
+                    <input id="category" type="text" name="category" value={data.category}/>
                     <label htmlFor="price">Price</label>
-                    <input id="price" type="text" name="price" />
+                    <input id="price" type="text" name="price" value={data.price} />
                     <label htmlFor="stock">Stock</label>
-                    <input id="stock" type="text" name="stock" />
+                    <input id="stock" type="text" name="stock" value={data.stock}/>
                     <label htmlFor="status">Status</label>
-                        <select id="status" name="status">
+                        <select id="status" name="status" value={data.status}>
                             <option value="active">Active</option>
                             <option value="inactive">Inactive</option>
                     </select>           

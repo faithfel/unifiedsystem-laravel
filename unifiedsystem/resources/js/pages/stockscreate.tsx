@@ -29,7 +29,7 @@ export default function StocksCreate() {
                 <div className="">
 
                     <label htmlFor="product">Product</label>
-                    <input id="product" type="text" name="product" value={data.product} onChange={{e} => setData('name', e.target.value)}/>
+                    <input id="product" type="text" name="product" value={data.product}/>
                     <label htmlFor="sku">SKU</label>
                     <input id="sku" type="text" name="sku" value={data.sku} />
                     <label htmlFor="category">Category</label>

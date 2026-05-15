@@ -148,3 +148,17 @@
     font-size: 30px;
     margin: 10px;
 }
+
+.create-stock-container {
+    border: 1px solid #5b5b5b;
+    padding: 10px;
+    border-radius: 5px;
+}
+input {
+    border: 1px solid #5b5b5b;
+    border-radius: 5px; 
+}
+
+button {
+
+}

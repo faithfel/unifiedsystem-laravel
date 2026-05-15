@@ -26,7 +26,7 @@ export default function StocksCreate() {
             
             <div className=""></div>
             <form>
-                <div className="">
+                <div className="create-stock-container">
 
                     <label htmlFor="product">Product</label>
                     <input id="product" type="text" name="product" value={data.product}/>

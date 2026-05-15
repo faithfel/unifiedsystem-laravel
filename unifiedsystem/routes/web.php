@@ -33,6 +33,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('employees', 'employees')->name('employees');
 });
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('employeescreate', 'employeescreate')->name('employeescreate');
+});
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('department', 'department')->name('department');

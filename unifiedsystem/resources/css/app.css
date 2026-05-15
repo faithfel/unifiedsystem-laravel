@@ -188,3 +188,23 @@ option {
     place-items: center;
 }
 
+/* Tables */
+
+.employee-table {
+    border: 1px solid #2e2e2e;
+
+}
+table {
+    border-radius: 5px;
+    margin: 20px;
+    border-collapse: collapse;
+}
+th {
+    background-color:  #2e2e2e;
+    padding: 4px;
+}
+
+td {
+    border: 1px solid #2e2e2e;
+    padding: 4px;
+}

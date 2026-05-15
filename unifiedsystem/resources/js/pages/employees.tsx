@@ -8,12 +8,17 @@ export default function Employees() {
         <>
             <table className='employee-table'>
                 <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
+                    <th>Employee ID</th>
+                    <th>Firt Name</th>
+                    <th>Last Name</th>
+                    <th>Department</th>
+                    <th>Date Hired</th>
+                    <th>Phone Number</th>
+                    <th>Position</th>
+                    <th>Base Salary</th>
                 </tr>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
+                    <td>Alfreds</td>
                     <td>Maria Anders</td>
                     <td>Germany</td>
                 </tr>

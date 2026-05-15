@@ -151,7 +151,7 @@
 }
 
 .create-stock-container {
-    border: 1px solid #5b5b5b;
+    border: 1px solid #171717;
     padding: 20px;
     border-radius: 5px;
     display: grid;
@@ -159,12 +159,12 @@
     margin: 40px;
 }
 input {
-    border: 1px solid #5b5b5b;
+    border: 1px solid #171717;
     border-radius: 5px; 
 }
 
 .save-button {
-    background-color: #383838;
+    background-color: #171717;
     padding: 4px;
     border-radius: 4px;
     max-width: 120px;
@@ -191,7 +191,7 @@ option {
 /* Tables */
 
 .employee-table {
-    border: 1px solid #2e2e2e;
+    border: 1px solid #171717;
 
 }
 table {
@@ -200,11 +200,15 @@ table {
     border-collapse: collapse;
 }
 th {
-    background-color:  #2e2e2e;
+    background-color:  #171717;
     padding: 4px;
 }
 
 td {
-    border: 1px solid #2e2e2e;
+    border: 1px solid #171717;
     padding: 4px;
+}
+
+th, td {
+    font-size: 13px;
 }

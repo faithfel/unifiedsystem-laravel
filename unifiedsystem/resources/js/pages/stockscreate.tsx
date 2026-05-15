@@ -18,7 +18,7 @@ import { Form } from "@inertiajs/react";
     return (
         <>
                 <h1 className='tabtitle'>Add Stock </h1> 
-            <Link href={(stocks())}><h1><CornerDownLeft /></h1></Link>
+            <Link href={(stocks())}>E</Link>
             <div className=""></div>
             <form action="/submit-stock" method="POST">
                 <div className="create-stock-container">

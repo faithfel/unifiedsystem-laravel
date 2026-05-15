@@ -2,6 +2,7 @@ import { Head } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { dashboard } from '@/routes';
 import { Form } from "@inertiajs/react";
+import Chart from 'chart.js/auto';
 
 export default function Dashboard() {
     return (

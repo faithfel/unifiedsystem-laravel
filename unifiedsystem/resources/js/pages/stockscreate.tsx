@@ -24,21 +24,21 @@ export default function StocksCreate() {
                 <h1 className='tabtitle'>Add Stock </h1> 
             
             <div className=""></div>
-            <form>
+            <form action="/submit-stock" method="POST">
                 <div className="create-stock-container">
 
                     <label  htmlFor="product">Product:</label>
-                    <input className='create-input' id="product" type="text" name="product" value={data.product}/>
+                    <input className='create-input' id="product" type="text" name="product"/>
                     <label htmlFor="sku">SKU:</label>
-                    <input className='create-input' id="sku" type="text" name="sku" value={data.sku} />
+                    <input className='create-input' id="sku" type="text" name="sku"/>
                     <label htmlFor="category">Category:</label>
-                    <input className='create-input' id="category" type="text" name="category" value={data.category}/>
+                    <input className='create-input' id="category" type="text" name="category"/>
                     <label htmlFor="price">Price:</label>
-                    <input className='create-input' id="price" type="text" name="price" value={data.price} />
+                    <input className='create-input' id="price" type="text" name="price"/>
                     <label htmlFor="stock">Stock:</label>
-                    <input className='create-input' id="stock" type="text" name="stock" value={data.stock}/>
+                    <input className='create-input' id="stock" type="text" name="stock"/>
                     <label htmlFor="status">Status:</label>
-                        <select className="dropdown" id="status" name="status"  value={data.status}>
+                        <select className="dropdown" id="status" name="status">
                             <option value="active">Active</option>  
                             <option value="inactive">Inactive</option>
                     </select>           

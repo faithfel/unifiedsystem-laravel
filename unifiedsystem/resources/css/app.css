@@ -183,3 +183,8 @@ option {
 .create-input{
 
 }
+
+.gif-welcome {
+    place-items: center;
+}
+

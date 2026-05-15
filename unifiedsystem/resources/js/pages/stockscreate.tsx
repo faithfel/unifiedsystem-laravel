@@ -1,12 +1,8 @@
-import { Head, Link, useForm } from '@inertiajs/react';
+import { Head, Link } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { stocks, stockscreate } from '@/routes';
 import { Button } from '@/components/ui/button';
-import { Label } from '@radix-ui/react-dropdown-menu';
-import { Input } from '@/components/ui/input';
 import { Form } from "@inertiajs/react";
-import { NotebookPen } from 'lucide-react';
-export default function StocksCreate() {
 
     const{ data, setData, post, processing, errors} = useForm({
         product: '',
@@ -22,7 +18,7 @@ export default function StocksCreate() {
     return (
         <>
                 <h1 className='tabtitle'>Add Stock </h1> 
-            
+            <Link href={(stocks())}><h1><CornerDownLeft /></h1></Link>
             <div className=""></div>
             <form action="/submit-stock" method="POST">
                 <div className="create-stock-container">

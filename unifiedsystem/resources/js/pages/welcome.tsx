@@ -51,17 +51,16 @@ export default function Welcome({
                 </header>
                 <div className="flex w-full items-center justify-center opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
                     <main className="flex w-full max-w-[335px] flex-col-reverse lg:max-w-4xl lg:flex-row">
-                        <div className="flex-1 rounded-br-lg rounded-bl-lg bg-white p-6 pb-12 text-[13px] leading-[20px] shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] lg:rounded-tl-lg lg:rounded-br-none lg:p-20 dark:bg-[#161615] dark:text-[#EDEDEC] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d]">
+                        <div className="flex-1 rounded-br-lg rounded-bl-lg bg-white ] lg:rounded-tl-lg lg:rounded-br-none lg:p-20 dark:bg-[#161615] dark:text-[#EDEDEC] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d]">
                             
-                            <h1 className="display-1">Welcome</h1>
-
+                        <img className='gif-welcome' src='https://i.pinimg.com/originals/2a/97/20/2a972054847bc3f0412083ac13871873.gif'></img>
                         </div>
 
                         <div className="relative -mb-px aspect-[335/364] w-full shrink-0 overflow-hidden rounded-t-lg bg-[#fff2f2] lg:mb-0 lg:-ml-px lg:aspect-auto lg:w-[438px] lg:rounded-t-none lg:rounded-r-lg dark:bg-[#1D0002]">
  
    
                            
-                                <img src='https://cdn.prod.website-files.com/62b11ce71b7eadab211a8efd/62b1302f50b81b12403e847d_hero-compo.svg'></img>
+                                <img className='img-welcome' src='https://cdn.prod.website-files.com/62b11ce71b7eadab211a8efd/62b1302f50b81b12403e847d_hero-compo.svg'></img>
 
                         </div>
                     </main>

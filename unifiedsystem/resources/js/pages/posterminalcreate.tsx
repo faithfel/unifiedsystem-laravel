@@ -9,6 +9,7 @@ export default function PosTerminalCreate() {
         <>
             <Head title="POS Terminal" />
             <h1 className='tabtitle'>POS TERMINAL create</h1>
+            
             <div className="m-4">
                 <Link href={(posterminal())}><Button className='return-button'>Return</Button></Link>
                 

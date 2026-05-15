@@ -153,12 +153,17 @@
     border: 1px solid #5b5b5b;
     padding: 10px;
     border-radius: 5px;
+    display: grid;
+    gap: 10px;
+    margin: 40px;
 }
 input {
     border: 1px solid #5b5b5b;
     border-radius: 5px; 
 }
 
-button {
-
+.save-button {
+    background-color: #383838;
+    padding: 4px;
+    border-radius: 4px;
 }

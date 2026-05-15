@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Label } from '@radix-ui/react-dropdown-menu';
 import { Input } from '@/components/ui/input';
 import { Form } from "@inertiajs/react";
-
+import { NotebookPen } from 'lucide-react';
 export default function StocksCreate() {
 
     const{ data, setData, post, processing, errors} = useForm({
@@ -21,8 +21,7 @@ export default function StocksCreate() {
 
     return (
         <>
-            <h1 className='tabtitle'>Stock create</h1>
-            <Link href={(stocks())}><Button>create</Button></Link>
+                <h1 className='tabtitle'>Add Stock </h1> 
             
             <div className=""></div>
             <form>
@@ -39,8 +38,8 @@ export default function StocksCreate() {
                     <label htmlFor="stock">Stock:</label>
                     <input id="stock" type="text" name="stock" value={data.stock}/>
                     <label htmlFor="status">Status:</label>
-                        <select id="status" name="status" value={data.status}>
-                            <option value="active">Active</option>
+                        <select className="dropdown" id="status" name="status"  value={data.status}>
+                            <option value="active">Active</option>  
                             <option value="inactive">Inactive</option>
                     </select>           
                     <button className='save-button' type='submit'>Save</button>

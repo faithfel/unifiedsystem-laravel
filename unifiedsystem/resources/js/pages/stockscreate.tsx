@@ -2,9 +2,11 @@ import { Head, Link } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { stocks, stockscreate } from '@/routes';
 import { Button } from '@/components/ui/button';
-import { Form } from "@inertiajs/react";
+import { useForm } from "@inertiajs/react";
 
-    const{ data, setData, post, processing, errors} = useForm({
+
+export default function StocksCreate() {
+const{ data, setData, post, processing, errors} = useForm({
         product: '',
         sku: '',
         category: '',
@@ -12,13 +14,12 @@ import { Form } from "@inertiajs/react";
         stock:'',
         status:'',
 
-    });
+});
 
 
     return (
         <>
-                <h1 className='tabtitle'>Add Stock </h1> 
-            <Link href={(stocks())}>E</Link>
+        
             <div className=""></div>
             <form action="/submit-stock" method="POST">
                 <div className="create-stock-container">

@@ -16,7 +16,10 @@ return new class extends Migration
             $table->string('first-name', length: 100);
             $table->string('last-name', length: 100);
             $table->string('department', length: 100);
+            $table->integer('phone-number');
             $table->timestamps('date-hired');
+            $table->string('position', length: 100);
+            $table->integer('base-salary');
         });
     }
 

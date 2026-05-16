@@ -2,10 +2,12 @@ import { Head, Link } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { employees, employeescreate } from '@/routes';
 import { Form } from "@inertiajs/react";
+import { Button } from '@/components/ui/button';
 
 export default function Employees() {
     return (
         <>
+            <Link  href={(employeescreate())}><h1 className='save-button'>Add Employee</h1></Link>
             <table className='employee-table'>
                 <tr>
                     <th>Employee ID</th>

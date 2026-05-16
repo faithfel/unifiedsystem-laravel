@@ -7,7 +7,7 @@ export default function EmployeesCreate() {
     return (
         <>
             
-        <Link href={(employees())}><h1>Return</h1></Link>
+        <Link className='save-button' href={(employees())}><h1>Return</h1></Link>
 
             <form action="/submit-employee" method="POST">
                 <div className="create-stock-container">

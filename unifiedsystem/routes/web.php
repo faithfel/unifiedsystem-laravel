@@ -59,3 +59,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 });
 require __DIR__.'/settings.php';
+
+
+/* Form Routes  */
+
+Route::post("/submit-employees", function (Request $request) {
+    return "form ";
+})->name("submit-employees");

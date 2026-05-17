@@ -9,8 +9,10 @@ export default function EmployeesCreate() {
             
         <Link className='save-button' href={(employees())}><h1>Return</h1></Link>
 
-            <form action="/submit-employee" method="POST">
+            <form action="{{route('submit-employees')}}" method="post">
+                
                 <div className="create-stock-container">
+                    
                     <label htmlFor='employee-id'>Employee ID:</label>
                     <input type='text' id="employee-id" name="employee-id"></input>
                     <label htmlFor='first-name'>First Name:</label>

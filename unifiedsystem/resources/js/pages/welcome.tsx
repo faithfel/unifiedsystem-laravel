@@ -52,7 +52,8 @@ export default function Welcome({
                     <h1 className='hometitle'>UNIFIED SYSTEM</h1>
                            
                                 <img className='img-welcome' src='https://cdn.prod.website-files.com/62b11ce71b7eadab211a8efd/62b1302f50b81b12403e847d_hero-compo.svg'></img>
-                    <img className='home-bg' src='unifiedsystem\public\bg.mp4'></img>
+                    
+                    
                         </div>
 
                 <div className="hidden h-14.5 lg:block"></div>

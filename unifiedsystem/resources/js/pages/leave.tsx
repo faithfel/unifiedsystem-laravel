@@ -2,6 +2,7 @@ import { Head } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { leave } from '@/routes';
 import { Form } from "@inertiajs/react";
+import {  } from 'lucide-react';
 
 export default function Leave() {
     return (

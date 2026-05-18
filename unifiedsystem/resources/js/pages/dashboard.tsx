@@ -3,6 +3,7 @@ import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { dashboard } from '@/routes';
 import { Form } from "@inertiajs/react";
 import Chart from 'chart.js/auto';
+import {  } from 'lucide-react';
 
 export default function Dashboard() {
     return (

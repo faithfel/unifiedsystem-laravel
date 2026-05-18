@@ -3,10 +3,14 @@ import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { employees, employeescreate } from '@/routes';
 import { Form } from "@inertiajs/react";
 import { Button } from '@/components/ui/button';
+import { Plus } from 'lucide-react';
 
 export default function Employees() {
     return (
         <>
+
+            <Link className='add-button' href={(employeescreate())}> <Plus /> </Link>
+
             <Link  href={(employeescreate())}><h1 className='save-button'>Add Employee</h1></Link>
             <table className='employee-table'>
                 <tr>

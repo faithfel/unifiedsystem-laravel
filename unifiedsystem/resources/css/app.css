@@ -227,3 +227,16 @@ select, option {
     color: #fff;
 }
 
+
+.add-button {
+    width: fit-content;
+    color: #fff;
+    background-color: #404040;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 4px;
+    border: 1px solid #171717;
+    position: absolute;
+    right: 0;
+    top:1;
+}

@@ -3,6 +3,7 @@ import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { posterminal, posterminalcreate } from '@/routes';
 import { Button } from '@/components/ui/button';
 import { Form } from "@inertiajs/react";
+import {  } from 'lucide-react';
 
 export default function PosTerminal() {
     return (

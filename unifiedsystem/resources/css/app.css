@@ -240,3 +240,20 @@ select, option {
     right: 0;
     top:1;
 }
+
+.img-welcome {
+    height: 100vh;
+    overflow: hidden; 
+    object-fit: cover;
+    transform: translateX(30%); /* Shifts the image 50% to the left */
+    margin: -10px;
+}
+
+.hometitle {
+    color: #fff;
+    text-align: center;
+    font-size: 170px;
+    z-index: 10;
+    position: absolute; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

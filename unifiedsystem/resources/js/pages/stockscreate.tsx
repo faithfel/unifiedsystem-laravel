@@ -5,17 +5,6 @@ import { Button } from '@/components/ui/button';
 import { useForm } from "@inertiajs/react";
 
 
-export default function StocksCreate() {
-const{ data, setData, post, processing, errors} = useForm({
-        product: '',
-        sku: '',
-        category: '',
-        price:'',
-        stock:'',
-        status:'',
-
-});
-
 
     return (
         <>

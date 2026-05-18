@@ -13,7 +13,7 @@ export default function Department() {
                     <label htmlFor='department-head'>Department Head:</label>
                     <input type='text' id="department-head" name="department-head" required></input> 
                      <label htmlFor='department-description'>Description:</label>
-                    <input type='textarea' id="department-description" name="department-description" required></input> 
+                    <textarea id="department-description" name="department-description" required></textarea> 
                                                 
                     <button className='save-button' type='submit'>Save</button>
                         

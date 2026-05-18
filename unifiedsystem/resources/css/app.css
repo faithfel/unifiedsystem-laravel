@@ -212,3 +212,18 @@ td {
 th, td {
     font-size: 13px;
 }
+
+textarea {
+    border-radius: 5px;
+    height: 100px;
+    border: 1px solid #171717;
+    padding: 4px;
+}
+
+select, option {
+    padding: 5px;
+    border: 1px solid #171717;
+    background-color: #0A0A0A;
+    color: #fff;
+}
+

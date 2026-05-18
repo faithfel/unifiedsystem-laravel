@@ -7,7 +7,7 @@ import { Form } from "@inertiajs/react";
 export default function Stocks() {
     return (
         <>
-            <Link href={(stockscreate())}><Button>create</Button></Link>
+
 
         </>
     );

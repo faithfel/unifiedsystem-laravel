@@ -41,12 +41,21 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('department', 'department')->name('department');
 
 });
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('departmentcreate', 'departmentcreate')->name('departmentcreate');
+
+});
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('attendance', 'attendance')->name('attendance');
 
 });
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('leave', 'leave')->name('leave');
+
+});
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('leavecreate', 'leavecreate')->name('leavecreate');
 
 });
 Route::middleware(['auth', 'verified'])->group(function () {

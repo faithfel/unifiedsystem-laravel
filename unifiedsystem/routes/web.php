@@ -67,6 +67,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('categories', 'categories')->name('categories');
 
 });
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('categoriescreate', 'categoriescreate')->name('categoriescreate');
+
+});
 require __DIR__.'/settings.php';
 
 

@@ -2,13 +2,13 @@ import { Head, Link } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { employees, employeescreate } from '@/routes';
 import { Form } from "@inertiajs/react";
-import {  } from 'lucide-react';
+import { Plus, X } from 'lucide-react';
 
 export default function EmployeesCreate() {
     return (
         <>
             
-        <Link className='save-button' href={(employees())}><h1>Return</h1></Link>
+            <Link className='add-button' href={(employees())}> <X /> </Link>
 
             <form action="/submit-employees" method="post">
                 <div className="create-stock-container">    

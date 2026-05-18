@@ -11,7 +11,6 @@ export default function Employees() {
 
             <Link className='add-button' href={(employeescreate())}> <Plus /> </Link>
 
-            <Link  href={(employeescreate())}><h1 className='save-button'>Add Employee</h1></Link>
             <table className='employee-table'>
                 <tr>
                     <th>Employee ID</th>

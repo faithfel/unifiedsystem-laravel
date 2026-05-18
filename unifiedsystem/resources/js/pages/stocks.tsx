@@ -3,12 +3,12 @@ import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { stocks, stockscreate } from '@/routes';
 import { Button } from '@/components/ui/button';
 import { Form } from "@inertiajs/react";
-import {  } from 'lucide-react';
+import { Plus, X } from 'lucide-react';
 
 export default function Stocks() {
     return (
         <>
-
+            <Link className='add-button' href={(stockscreate())}> <Plus /> </Link>
 
         </>
     );

@@ -1,13 +1,16 @@
-import { Head } from '@inertiajs/react';
+import { Head, Link } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
-import { leave } from '@/routes';
+import { leave, leavecreate } from '@/routes';
 import { Form } from "@inertiajs/react";
-import {  } from 'lucide-react';
+import { Plus, X } from 'lucide-react';
 
 export default function Leave() {
     return (
         <>
-                        <table className='employee-table'>
+
+        <Link className='add-button' href={(leavecreate())}> <Plus /> </Link>
+
+            <table className='leave-table'>
                 <tr>
                     <th>Employee Name</th>
                     <th>Start Date</th>

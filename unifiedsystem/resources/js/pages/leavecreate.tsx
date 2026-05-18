@@ -1,12 +1,15 @@
-import { Head } from '@inertiajs/react';
+import { Head, Link } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { leave, leavecreate } from '@/routes';
 import { Form } from "@inertiajs/react";
-import {  } from 'lucide-react';
+import { Plus, X  } from 'lucide-react';
 
 export default function LeaveCreate() {
     return (
         <>
+
+        <Link className='add-button' href={(leave())}> <X /> </Link>
+
             <form action="/submit-department" method="post">
                 <div className="create-stock-container"> 
 

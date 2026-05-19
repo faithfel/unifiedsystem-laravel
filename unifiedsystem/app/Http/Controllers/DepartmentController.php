@@ -12,11 +12,11 @@ class DepartmentController extends Controller
      */
     public function index()
     {
-        $department = Department::all();
-        return view('department.index');
+        $departments = Department::all();
+        return view('departments.index', compact('departments'));
 
 
-        return redirect('/department');
+        
     }
 
     /**
@@ -24,7 +24,7 @@ class DepartmentController extends Controller
      */
     public function create()
     {
-        //
+        return view('departmentcreate.create');
     }
 
     /**
@@ -32,7 +32,15 @@ class DepartmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'department-name' => 'required',
+            'department-head' => 'required',
+            'department-descriptiom' => 'required'
+
+        ]);
+
+        Department::create($validated);
+        return redirect()->route('departments.index')->with('success', 'Department created.');
     }
 
     /**
@@ -46,9 +54,10 @@ class DepartmentController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Department $department)
+    public function edit($id)
     {
-        //
+        $department = Department::findOrFail($id);
+        return view('department.edit', compact('departments'));
     }
 
     /**
@@ -56,7 +65,16 @@ class DepartmentController extends Controller
      */
     public function update(Request $request, Department $department)
     {
-        //
+        $validate = $request->validate([
+            'department-name' => 'required',
+            'department-head' => 'required',
+            'department-descriptiom' => 'required'
+
+        ]);
+
+        $department = Department::findOrFail($id);
+        $department->update($validated);
+        return redirect()->route('departments.index')->with('success', 'Department updated.');
     }
 
     /**
@@ -64,6 +82,9 @@ class DepartmentController extends Controller
      */
     public function destroy(Department $department)
     {
-        //
+        $department = Department::findOrFail($id);
+        $department->delete();
+
+                return redirect()->route('departments.index')->with('success', 'Department deleted.');
     }
 }

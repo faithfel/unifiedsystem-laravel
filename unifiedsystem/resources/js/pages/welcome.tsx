@@ -15,7 +15,11 @@ export default function Welcome({
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet"/>
             </Head>
-                    <nav className="welcome-nav">
+
+                <div className="flex min-h-screen flex-col items-center bg-[#FDFDFC] p-6 text-[#1b1b18] lg:justify-center lg:p-8 dark:bg-[#0a0a0a]">
+                <header className="mb-6 w-full max-w-[335px] text-sm not-has-[nav]:hidden lg:max-w-4xl">
+                    <nav className="flex items-center justify-end gap-4">
+
                         {auth.user ? (
                             <Link
                                 href={dashboard()}
@@ -42,10 +46,14 @@ export default function Welcome({
                             </>
                         )}
                     </nav>
+                    </header>
+
                     <h1 className='hometitle'>UNIFIED SYSTEM</h1>
                            
-                                <img className='img-welcome' src='https://cdn.prod.website-files.com/62b11ce71b7eadab211a8efd/62b1302f50b81b12403e847d_hero-compo.svg'></img>
-                               
+                    <img className='img-welcome' src='https://cdn.prod.website-files.com/62b11ce71b7eadab211a8efd/62b1302f50b81b12403e847d_hero-compo.svg'></img>
+                    
+                    </div>
+                <div className="hidden h-14.5 lg:block"></div>      
         </>
     );
 }

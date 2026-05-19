@@ -79,3 +79,12 @@ require __DIR__.'/settings.php';
 Route::post("/submit-employees", function (Request $request) {
     return "form ";
 })->name("submit-employees");
+
+
+Route::post("/submit-department", function (Request $request) {
+    return "form ";
+})->name("submit-department");
+
+Route::post("/submit-categories", function (Request $request) {
+    return "form ";
+})->name("submit-categories");

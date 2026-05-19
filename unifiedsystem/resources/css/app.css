@@ -232,7 +232,7 @@ select, option {
     width: fit-content;
     color: #fff;
     background-color: #404040;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 15px;
     padding: 4px;
     border: 1px solid #171717;
@@ -251,7 +251,7 @@ select, option {
 
 .hometitle {
     color: #fff;
-    font-size: 170px;
+    font-size: 180px;
     z-index: 1;
     align-content: center;
     position: absolute; 

@@ -10,7 +10,7 @@ export default function Department() {
 
         <Link className='add-button' href={(department())}> <X /> </Link>
 
-            <form action="/submit-department" method="post">
+            <form action="{{ route('departments.store') }}" method="post">
                 <div className="create-stock-container"> 
                     <label htmlFor='department-name'>Department Name:</label>
                     <input type='text' id="department-name" name="department-name" required></input> 

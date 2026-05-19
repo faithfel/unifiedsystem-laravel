@@ -82,7 +82,7 @@ Route::post("/submit-employees", function (Request $request) {
 })->name("submit-employees");
 
 
-Route::resource('submit-department', DepartmentController::class);
+Route::resource('departments', DepartmentController::class);
 
 
 Route::post("/submit-categories", function (Request $request) {

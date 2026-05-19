@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\POSTerminalController;
+use App\Http\Controllers\DepartmentController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
@@ -81,17 +82,18 @@ Route::post("/submit-employees", function (Request $request) {
 })->name("submit-employees");
 
 
-Route::post("/submit-department", function (Request $request) {
-    return "form ";
-})->name("submit-department");
+Route::resource('submit-department', DepartmentController::class);
+
 
 Route::post("/submit-categories", function (Request $request) {
     return "form ";
 })->name("submit-categories");
 
+
 Route::post("/submit-stocks", function (Request $request) {
     return "form ";
 })->name("submit-stocks");
+
 
 Route::post("/submit-leave", function (Request $request) {
     return "form ";

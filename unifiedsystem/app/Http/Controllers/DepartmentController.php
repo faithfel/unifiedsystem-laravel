@@ -12,7 +12,11 @@ class DepartmentController extends Controller
      */
     public function index()
     {
-        //
+        $department = Department::all();
+        return view('department.index');
+
+
+        return redirect('/department');
     }
 
     /**

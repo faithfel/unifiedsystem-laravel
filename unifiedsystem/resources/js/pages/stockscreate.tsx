@@ -10,7 +10,7 @@ export default function StocksCreate() {
         <>
             <Link className='add-button' href={(stocks())}> <X /> </Link>
 
-            <form action="/submit-stock" method="post">
+            <form action="/submit-stocks" method="post">
                 <div className="create-stock-container"> 
                     <label htmlFor='product-name'>Product Name:</label>
                     <input type='text' id="product-name" name="product-name" required></input> 

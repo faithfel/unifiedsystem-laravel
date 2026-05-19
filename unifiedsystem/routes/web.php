@@ -88,3 +88,7 @@ Route::post("/submit-department", function (Request $request) {
 Route::post("/submit-categories", function (Request $request) {
     return "form ";
 })->name("submit-categories");
+
+Route::post("/submit-stocks", function (Request $request) {
+    return "form ";
+})->name("submit-stocks");

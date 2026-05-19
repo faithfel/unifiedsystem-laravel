@@ -256,6 +256,9 @@ select, option {
     align-content: center;
     position: absolute; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .home-bg {
@@ -266,6 +269,6 @@ select, option {
 }
 
 .welcome-nav {
-     float: center;
-    margin: 15px;
+     float: right;
+    margin: 35px;
 }

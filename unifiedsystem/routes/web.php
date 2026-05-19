@@ -92,3 +92,7 @@ Route::post("/submit-categories", function (Request $request) {
 Route::post("/submit-stocks", function (Request $request) {
     return "form ";
 })->name("submit-stocks");
+
+Route::post("/submit-leave", function (Request $request) {
+    return "form ";
+})->name("submit-leave");

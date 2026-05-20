@@ -45,15 +45,17 @@ class SubmitDepartmentController extends Controller
      */
     public function show(SubmitDepartment $submitDepartment)
     {
-        //
+         
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(SubmitDepartment $submitDepartment)
+    public function edit($id)
     {
-        //
+        $submitdepartment = SubmitDepartment::findOrFail($id);
+        return view('departmentedit',compact('departmentedit'));
+
     }
 
     /**

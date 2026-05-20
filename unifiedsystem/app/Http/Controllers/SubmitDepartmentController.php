@@ -12,7 +12,8 @@ class SubmitDepartmentController extends Controller
      */
     public function index()
     {
-        //
+        $submitdepartment = SubmitDepartment::all();
+        return view('department',compact('department'));
     }
 
     /**
@@ -20,8 +21,7 @@ class SubmitDepartmentController extends Controller
      */
     public function create()
     {
-        $submitdepartment = SubmitDepartment::all();
-        return view('department',compact('department'));
+        return view('departmentcreate');
     }
 
     /**
@@ -29,7 +29,15 @@ class SubmitDepartmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'department-name' => 'required',
+            'department-head' => 'required',
+            'department-description' => 'required'
+        ]);
+
+        SubmitDepartment::create($validated);
+        return redirect()->route('department')->with('success', 'Submit Succesful!');
+
     }
 
     /**

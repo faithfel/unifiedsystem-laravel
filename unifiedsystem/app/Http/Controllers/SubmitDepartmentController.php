@@ -21,7 +21,7 @@ class SubmitDepartmentController extends Controller
     public function create()
     {
         $submitdepartment = SubmitDepartment::all();
-        return view('/departments');
+        return view('department',compact('department'));
     }
 
     /**

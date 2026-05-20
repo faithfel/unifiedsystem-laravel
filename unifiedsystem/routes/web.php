@@ -1,6 +1,6 @@
 <?php
 use App\Http\Controllers\POSTerminalController;
-use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\SubmitDepartmentController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
@@ -82,7 +82,7 @@ Route::post("/submit-employees", function (Request $request) {
 })->name("submit-employees");
 
 
-Route::resource('departments', DepartmentController::class);
+Route::resource('submitdepartment', SubmitDepartmentController::class);
 
 
 Route::post("/submit-categories", function (Request $request) {

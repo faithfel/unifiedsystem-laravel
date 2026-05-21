@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('department-name');
             $table->string('department-head');
             $table->text('department-description');
+            $table->timestamps(); 
         });
     }
 

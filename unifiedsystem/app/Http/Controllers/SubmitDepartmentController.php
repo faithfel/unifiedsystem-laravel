@@ -10,6 +10,7 @@ class SubmitDepartmentController extends Controller
     /**
      * Display a listing of the resource.
      */
+    
     public function submitcontent(Request $request) 
     {
         $incomingFields = $request->validate([

@@ -4,14 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\SubmitDepartment;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
+use Inertia\Response;
+
 
 class SubmitDepartmentController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    
-    public function submitcontent(Request $request) 
+
+    public function submitdepartment(Request $request) 
     {
         $incomingFields = $request->validate([
             'department-name' => 'required',
@@ -22,5 +25,15 @@ class SubmitDepartmentController extends Controller
         SubmitDepartment::create($incomingFields);
 
         return redirect('/department');
+    }
+    
+    
+    public function index(): Response
+    {
+
+       $data = SubmitDepartment::all();
+        return Inertia::render('department', [
+            'department' => $data
+        ]);
     }
 }

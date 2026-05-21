@@ -17,7 +17,10 @@ class SubmitDepartmentController extends Controller
             'department-head' => 'required',
             'department-description' => 'required',
         ]);
+
         
-        return  'hi mf';
+        SubmitDepartment::create($incomingFields);
+
+        return redirect('/department');
     }
 }

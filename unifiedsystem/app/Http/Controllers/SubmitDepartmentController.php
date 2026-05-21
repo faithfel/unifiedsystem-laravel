@@ -10,67 +10,14 @@ class SubmitDepartmentController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function submitcontent(Request $request) 
     {
-        $submitdepartment = SubmitDepartment::all();
-        return view('department',compact('department'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        return view('departmentcreate');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        $validate = $request->validate([
+        $incomingFields = $request->validate([
             'department-name' => 'required',
             'department-head' => 'required',
-            'department-description' => 'required'
+            'department-description' => 'required',
         ]);
-
-        SubmitDepartment::create($validated);
-        return redirect()->route('department')->with('success', 'Submit Succesful!');
-
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(SubmitDepartment $submitDepartment)
-    {
-         
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit($id)
-    {
-        $submitdepartment = SubmitDepartment::findOrFail($id);
-        return view('departmentedit',compact('departmentedit'));
-
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, SubmitDepartment $submitDepartment)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(SubmitDepartment $submitDepartment)
-    {
-        //
+        
+        return  'hi mf';
     }
 }

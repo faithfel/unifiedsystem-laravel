@@ -77,13 +77,16 @@ require __DIR__.'/settings.php';
 
 /* Form Routes  */
 
+
+
+Route::post('/submitdepartment', [SubmitDepartmentController::class, 'submitcontent']);
+
+
+
+
 Route::post("/submit-employees", function (Request $request) {
     return "form ";
 })->name("submit-employees");
-
-
-Route::resource('submitdepartment', SubmitDepartmentController::class);
-
 
 Route::post("/submit-categories", function (Request $request) {
     return "form ";

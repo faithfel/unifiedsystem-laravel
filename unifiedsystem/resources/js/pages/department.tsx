@@ -4,15 +4,10 @@ import { department, departmentcreate } from '@/routes';
 import { Form, usePage } from "@inertiajs/react";
 import { Plus, X  } from 'lucide-react';
 
-interface UserProps {
-  departmentdata: {
-    departmentname  : string;
-
-  };
-}
 
 
-export default function Department({departmentdata}: UserProps) {
+
+export default function Department() {
 
 
     return (
@@ -22,7 +17,7 @@ export default function Department({departmentdata}: UserProps) {
             <div className="department-container">
                 <div className="department-box">
                         <h1>Department List</h1>
-                        <h1>Welcome back, {departmentdata.departmentname}</h1>
+
 
                 </div>
             </div>

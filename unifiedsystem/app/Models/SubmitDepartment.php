@@ -9,4 +9,6 @@ class SubmitDepartment extends Model
 {
     use HasFactory;
     protected $fillable = [ 'department-name','department-head', 'department-description' ];
+
+    
 }

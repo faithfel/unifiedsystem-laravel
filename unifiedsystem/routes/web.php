@@ -40,7 +40,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('department', 'department')->name('department');
-
+    
+    
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {

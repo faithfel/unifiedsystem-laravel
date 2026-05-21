@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('submit_departments', function (Blueprint $table) {
             $table->id();
-            $table->string('department-name');
-            $table->string('department-head');
-            $table->text('department-description');
+            $table->string('departmentname');
+            $table->string('departmenthead');
+            $table->text('departmentdescription');
             $table->timestamps(); 
         });
     }

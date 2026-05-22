@@ -30,10 +30,10 @@ class SubmitDepartmentController extends Controller
     
     public function display()
     {
-        
+        $departmentdata = SubmitDepartment::all(); 
 
-        return Inertia::render('SubmitDepartment', [
-            $departmentdata = SubmitDepartment::all();
+        return inertia('department', [
+            'departmentdata' => $departmentdata
         ]);
     }
     

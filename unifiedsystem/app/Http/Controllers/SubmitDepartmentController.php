@@ -28,10 +28,10 @@ class SubmitDepartmentController extends Controller
     }
     
     public function display()
-{
-    return Inertia::render('department', [
-        'departments' => SubmitDepartment::all(),
-    ]);
-}
+    {
+        return Inertia::render('department', [
+            'departmentname' => $department-name,
+        ]);
+    }
 
 }

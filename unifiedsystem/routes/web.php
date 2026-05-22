@@ -80,7 +80,7 @@ require __DIR__.'/settings.php';
 
 
 
-Route::post('/submitdepartment', [SubmitDepartmentController::class, 'submitcontent']);
+Route::post('/submitdepartment', [SubmitDepartmentController::class, 'submitdepartment']);
 
 
 

@@ -27,13 +27,11 @@ class SubmitDepartmentController extends Controller
         return redirect('/department');
     }
     
-    
-    public function index(): Response
-    {
+    public function display()
+{
+    return Inertia::render('department', [
+        'departments' => SubmitDepartment::all(),
+    ]);
+}
 
-       $data = SubmitDepartment::all();
-        return Inertia::render('department', [
-            'department' => $data
-        ]);
-    }
 }

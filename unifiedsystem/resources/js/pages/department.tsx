@@ -1,13 +1,33 @@
 import { Head, Link } from '@inertiajs/react';
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import { department, departmentcreate } from '@/routes';
-import { Form } from "@inertiajs/react";
+import { Form, usePage } from "@inertiajs/react";
 import { Plus, X  } from 'lucide-react';
 
-export default function Department() {
+interface UserProps {
+  departmentdata: {
+    departmentname  : string;
+
+  };
+}
+
+
+export default function Department({departmentdata}: UserProps) {
+
+
     return (
         <>
           <Link className='add-button' href={(departmentcreate())}> <Plus /> </Link>
+            
+            <div className="department-container">
+                <div className="department-box">
+                        <h1>Department List</h1>
+                        <h1>Welcome back, {departmentdata.departmentname}</h1>
+
+                </div>
+            </div>
+
+
 
         </>
     );

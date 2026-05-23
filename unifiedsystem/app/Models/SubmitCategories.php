@@ -4,11 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-
-class SubmitDepartment extends Model
+class SubmitCategories extends Model
 {
     use HasFactory;
-    protected $fillable = [ 'department_name','department_head', 'department_description' ];
-
-    
+    protected $fillable = [ 'category_name', 'category_description' ];
 }

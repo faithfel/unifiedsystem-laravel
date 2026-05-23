@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('submit_departments', function (Blueprint $table) {
+        Schema::create('submit_leaves', function (Blueprint $table) {
             $table->id();
-            $table->string('department_name');
-            $table->string('department_head');
-            $table->text('department_description');
-            $table->timestamps(); 
+            $table->timestamps();
         });
     }
 
@@ -25,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('submit_departments');
+        Schema::dropIfExists('submit_leaves');
     }
 };

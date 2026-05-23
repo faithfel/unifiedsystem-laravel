@@ -9,13 +9,13 @@ export default function Categories() {
         <>
             <Link className='add-button' href={(categories())}> <X /> </Link>
             
-            <form action="/submit-categories" method="post">
+            <form action="/submitcategories" method="POST">
                 <div className="create-stock-container"> 
-                    <label htmlFor='category-name'>Category Name:</label>
-                    <input type='text' id="category-name" name="category-name" required></input> 
+                    <label htmlFor='category_name'>Category Name:</label>
+                    <input type='text' id="category_name" name="category_name" required></input> 
                 
-                    <label htmlFor='category-description'>Description:</label>
-                    <textarea id="category-description" name="category-description" required></textarea> 
+                    <label htmlFor='category_description'>Description:</label>
+                    <textarea id="category_description" name="category_description" required></textarea> 
                                                             
                     <button className='save-button' type='submit'>Save</button>
                                     

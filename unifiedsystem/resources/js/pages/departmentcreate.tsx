@@ -12,12 +12,12 @@ export default function Department() {
 
             <form action="/submitdepartment" method="POST">
                 <div className="create-stock-container"> 
-                    <label htmlFor='department-name'>Department Name:</label>
-                    <input type='text' id="department-name" name="department-name" required></input> 
-                    <label htmlFor='department-head'>Department Head:</label>
-                    <input type='text' id="department-head" name="department-head" required></input> 
-                     <label htmlFor='department-description'>Description:</label>
-                    <textarea id="department-description" name="department-description" required></textarea> 
+                    <label htmlFor='department_name'>Department Name:</label>
+                    <input type='text' id="department_name" name="department_name" required></input> 
+                    <label htmlFor='department_head'>Department Head:</label>
+                    <input type='text' id="department_head" name="department_head" required></input> 
+                     <label htmlFor='department_description'>Description:</label>
+                    <textarea id="department_description" name="department_description" required></textarea> 
                                                 
                     <button className='save-button' type='submit'>Save</button>
                         

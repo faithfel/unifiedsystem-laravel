@@ -17,9 +17,9 @@ class SubmitDepartmentController extends Controller
     public function submitdepartment(Request $request) 
     {
         $incomingFields = $request->validate([
-            'department-name' => 'required',
-            'department-head' => 'required',
-            'department-description' => 'required',
+            'department_name' => 'required',
+            'department_head' => 'required',
+            'department_description' => 'required',
         ]);
 
         SubmitDepartment::create($incomingFields);
@@ -30,7 +30,7 @@ class SubmitDepartmentController extends Controller
     public function display()
     {
         return Inertia::render('department', [
-            'departmentname' => $department-name,
+            'departmentname' => $department_name,
         ]);
     }
 

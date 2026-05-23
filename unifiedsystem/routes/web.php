@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\POSTerminalController;
 use App\Http\Controllers\SubmitDepartmentController;
+use App\Http\Controllers\SubmitCategoriesController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
@@ -82,16 +83,16 @@ require __DIR__.'/settings.php';
 
 Route::post('/submitdepartment', [SubmitDepartmentController::class, 'submitdepartment']);
 
+Route::post('/submitleave', [SubmitLeaveController::class, 'submitleave']);
 
+Route::post('/submitcategories', [SubmitCategoriesController::class, 'submitcategories']);
 
 
 Route::post("/submit-employees", function (Request $request) {
     return "form ";
 })->name("submit-employees");
 
-Route::post("/submit-categories", function (Request $request) {
-    return "form ";
-})->name("submit-categories");
+
 
 
 Route::post("/submit-stocks", function (Request $request) {
@@ -99,6 +100,3 @@ Route::post("/submit-stocks", function (Request $request) {
 })->name("submit-stocks");
 
 
-Route::post("/submit-leave", function (Request $request) {
-    return "form ";
-})->name("submit-leave");

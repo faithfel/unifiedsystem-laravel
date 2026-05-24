@@ -85,9 +85,8 @@ Route::post('/submitdepartment', [SubmitDepartmentController::class, 'submitdepa
 
 
 
-Route::post("/submit-employees", function (Request $request) {
-    return "form ";
-})->name("submit-employees");
+Route::post('/employees', [PostController::class, 'store'])->name('employees.store');
+
 
 Route::post("/submit-categories", function (Request $request) {
     return "form ";

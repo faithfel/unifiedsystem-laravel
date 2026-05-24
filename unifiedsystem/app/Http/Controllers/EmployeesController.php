@@ -28,38 +28,19 @@ class EmployeesController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $employees=new Employees();
+        $employees->employee_id =  $request-> employee_id;
+        $employees->first_name = $request-> first_name;
+        $employees->last_name =  $request->last_name;
+        $employees->department = $request->department;
+        $employees->date_hired = $request->date_hired;
+        $employees->phone_number = $request->phone_number;
+        $employees->position = $request->position;
+        $employees->base_salary = $request-> base_salary;
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Employees $employees)
-    {
-        //
-    }
+        $employees->save();
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Employees $employees)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Employees $employees)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Employees $employees)
-    {
-        //
+        return redirect()-> route('employees');
     }
 }
+

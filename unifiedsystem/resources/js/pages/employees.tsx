@@ -4,8 +4,23 @@ import { employees, employeescreate } from '@/routes';
 import { Form } from "@inertiajs/react";
 import { Button } from '@/components/ui/button';
 import { Plus } from 'lucide-react';
+import {useForm} from '@inertiajs/react';
 
 export default function Employees() {
+
+    const {data, setData, post} = useForm({
+        employee_id: '',
+        first_name: '',
+        last_name: '',
+        department: '',
+        date_hired: '',
+        phone_number: '',
+        position: '',
+        base_salary: '',
+
+
+    })
+
     return (
         <>
 

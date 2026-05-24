@@ -35,6 +35,7 @@ export default function Welcome({
                                 >
                                     Log in
                                 </Link>
+                               {/*} 
                                 {canRegister && (
                                     <Link
                                         href={register()}
@@ -42,7 +43,7 @@ export default function Welcome({
                                     >
                                         Register
                                     </Link>
-                                )}
+                                )} */}
                             </>
                         )}
                     </nav>

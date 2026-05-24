@@ -102,3 +102,4 @@ Route::post("/submit-stocks", function (Request $request) {
 Route::post("/submit-leave", function (Request $request) {
     return "form ";
 })->name("submit-leave");
+

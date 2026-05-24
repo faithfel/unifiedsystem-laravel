@@ -37,6 +37,11 @@ const mainNavItems: NavItem[] = [
         href: stocks(),  
         icon: Package,
     },
+                    {
+        title: 'Categories',
+        href: categories(),  
+        icon: LayoutGrid,
+    },
     {
         title: 'Employees Lists',
         href: employees(),  
@@ -63,11 +68,7 @@ const mainNavItems: NavItem[] = [
         href: payroll(),  
         icon: DollarSign,
     },
-                {
-        title: 'Categories',
-        href: categories(),  
-        icon: LayoutGrid,
-    },
+
 ];
 
 const footerNavItems: NavItem[] = [

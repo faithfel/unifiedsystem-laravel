@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class SubmitDepartment extends Model
 {
     use HasFactory;
-    protected $fillable = [ 'department-name','department-head', 'department-description' ];
+    protected $fillable = [ 'departmentname','departmenthead', 'departmentdescription' ];
 
-    
+
 }

@@ -17,9 +17,9 @@ class SubmitDepartmentController extends Controller
     public function submitdepartment(Request $request) 
     {
         $incomingFields = $request->validate([
-            'department-name' => 'required',
-            'department-head' => 'required',
-            'department-description' => 'required',
+            'departmentname' => 'required',
+            'departmenthead' => 'required',
+            'departmentdescription' => 'required',
         ]);
 
         SubmitDepartment::create($incomingFields);

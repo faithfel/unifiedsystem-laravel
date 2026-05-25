@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\POSTerminalController;
 use App\Http\Controllers\SubmitDepartmentController;
+use App\Http\Controllers\SubmitEmployeeController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
@@ -16,7 +17,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('stocks', 'stocks')->name('stocks');
     Route::inertia('stockscreate', 'stockscreate')->name('stockscreate');
     Route::inertia('employees', 'employees')->name('employees');
-    Route::inertia('employeescreate', 'employeescreate')->name('employeescreate');
+    Route::get('/employeescreate',  [SubmitEmployee::class, "index"])->name('employee.index');
     Route::inertia('department', 'department')->name('department');
     Route::inertia('departmentcreate', 'departmentcreate')->name('departmentcreate');
     Route::inertia('attendance', 'attendance')->name('attendance');

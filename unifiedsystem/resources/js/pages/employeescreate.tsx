@@ -20,7 +20,7 @@ export default function EmployeesCreate() {
 
     })
 
-    const handleSubmit= (e) => {
+    const handleSubmit= (e: React.SubmitEvent<HTMLFormElement>) => {
         e.preventDefault();
         post(route('posts.store'));
     }
@@ -52,10 +52,10 @@ export default function EmployeesCreate() {
                     <input type="text" id="phone_number" name="phone_number" required value={data.phone_number} onChange={(e)=>setData('phone_number', e.target.value)} ></input>
 
                     <label htmlFor='position'>Position:</label>
-                    <input type='text' id="position" name="position" required value={data.position} onChange={(e)=>setData('phone_number', e.target.value)}></input>
+                    <input type='text' id="position" name="position" required value={data.position} onChange={(e)=>setData('position', e.target.value)}></input>
 
                     <label htmlFor="base_salary">Base Salary:</label>
-                    <input type="number" id="base_salary" name="base_salary" required value={data.base_salary} onChange={(e)=>setData('base_salary', e.target.value)}></input>
+                    <input type="text" id="base_salary" name="base_salary" required value={data.base_salary} onChange={(e)=>setData('base_salary', e.target.value)}></input>
 
                     <button className='save-button' type='submit'>Save</button>
                 </div>  

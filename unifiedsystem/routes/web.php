@@ -17,7 +17,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('stocks', 'stocks')->name('stocks');
     Route::inertia('stockscreate', 'stockscreate')->name('stockscreate');
     Route::inertia('employees', 'employees')->name('employees');
-    Route::get('/employeescreate',  [SubmitEmployee::class, "index"])->name('employee.index');
+    Route::get('/employeescreate',  [SubmitEmployee::class, "index"])->name('employees.index');
     Route::inertia('department', 'department')->name('department');
     Route::inertia('departmentcreate', 'departmentcreate')->name('departmentcreate');
     Route::inertia('attendance', 'attendance')->name('attendance');
